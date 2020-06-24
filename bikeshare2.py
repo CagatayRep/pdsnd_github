@@ -9,6 +9,7 @@ CITY_DATA = { 'chicago': 'chicago.csv',
 MONTHS = ['january', 'february', 'march', 'april', 'may', 'june']
 DAYS = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
 
+#for seperate the analyzed data
 seperator = lambda i :print(i*100)
 
 def operation_time(str_time):
@@ -205,7 +206,8 @@ def time_stats(df):
     # display the most common start hour; convert to 12-hour string
     hour = df['hour'].mode()[0]
     print('-----> Start hour:          ', hour)
-    operation_time(str_time)
+    operation_time(str_time)#calculate time of process
+
 
 def station_stats(df):
     """Displays statistics on the most popular stations and trip."""
@@ -247,6 +249,7 @@ def seconds_to_HMS_str(total_seconds):
         (str) day_hour_str - number of weeks, days, hours, minutes, and seconds
     """
     #The divmod() method in python takes two numbers and returns a pair of numbers consisting of their quotient and remainder.
+    #User friendly time :)
     minutes, seconds = divmod(total_seconds, 60)
     hours, minutes = divmod(minutes, 60)
     days, hours = divmod(hours, 24)
