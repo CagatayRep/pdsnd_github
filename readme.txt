@@ -2,7 +2,9 @@ open cmd
 go to the location of the file
 run file
 python bikeshare2.py 
-
+have fun :) 
+İ modified for commit :)
+bye!
 Sources :
 
 https://stackoverflow.com/questions/5622976/how-do-you-calculate-program-run-time-in-python
