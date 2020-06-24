@@ -297,7 +297,7 @@ def trip_duration_stats(df):
 
     print('\nCalculating Trip Duration...\n')
     str_time=timeit.default_timer()
-
+    #modified data
     # display total travel time
     total_travel_time = int(df['Trip Duration'].sum())
     print('    Total travel time:   ', seconds_conv(total_travel_time),"\n")
